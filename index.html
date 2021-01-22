@@ -1,359 +1,421 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello, world!</title>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <title>Hello, world!</title>
+</head>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
+
 <body cz-shortcut-listen="true">
-    
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Carousel</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item ">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="lakshmipur.html">Lakshmipur</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="rangpur.html">Rangpur</a>
-              </li>
-              
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Carousel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lakshmipur.html">Lakshmipur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rangpur.html">Rangpur</a>
+            </li>
+            
+          </ul>
+          
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide pointer-event " data-bs-ride="carousel">
+      <ol class="carousel-indicators indexing-pointer">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1" class=""></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner position-relative">
+        <div class="carousel-item  active" data-bs-interval="10000">
+          <div class="overlay position-absolute"></div>
+          <div class="sizing-image image-width-small">
+            <img src="images/banner/banner-4-min-compressed.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-caption indexing-banner-caption d-xs-block position-absolute h-25 top-50">
+            <h5 style="font-size: 4.4vw;">First slide label</h5>
+            <p style="font-size: 1.5vw;">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
-      </nav>
-      
-    </header>
-    
-    <main>
-    
-      <div id="myCarousel" class="carousel slide pointer-event " data-bs-ride="carousel">
-        <ol class="carousel-indicators indexing-pointer">
-          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#myCarousel" data-bs-slide-to="1" class=""></li>
-          <li data-bs-target="#myCarousel" data-bs-slide-to="2" class=""></li>
-        </ol>
-        <div class="carousel-inner position-relative">
-            <div class="carousel-item  active" 
-            data-bs-interval="10000">
-            <div class="overlay position-absolute"></div>
-              <div class="sizing-image image-width-small">
-              <img  src="images/banner/banner-4-min-compressed.jpg"  class="d-block w-100" alt="...">
-            </div>
-            
-              <div class="carousel-caption indexing-banner-caption d-xs-block position-absolute h-25 top-50">
-                <h5 style="font-size: 4.4vw;">First slide label</h5>
-                <p style="font-size: 1.5vw;">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <div class="overlay position-absolute"></div>
-              <div class="sizing-image">
-              <img src="images/banner/banner-2-min-compressed.jpg" class="d-block w-100" alt="...">
-            </div>
-              <div class="carousel-caption position-absolute h-25 top-50 indexing-banner-caption d-xs-block">
-                <h5 style="font-size: 4.4vw;">Second slide label</h5>
-                <p style="font-size: 1.5vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="overlay position-absolute"></div>
-              <div class="sizing-image">
-              <img src="images/banner/banner-1-min-compressed.jpg" class="d-block w-100" alt="...">
-            </div>
-              <div class="carousel-caption position-absolute h-25 top-50 indexing-banner-caption d-xs-block">
-                <h5 style="font-size: 4.4vw;">Third slide label</h5>
-                <p style="font-size: 1.5vw;">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </div>
-            </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="overlay position-absolute"></div>
+          <div class="sizing-image">
+            <img src="images/banner/banner-2-min-compressed.jpg" class="d-block w-100" alt="...">
           </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
+          <div class="carousel-caption position-absolute h-25 top-50 indexing-banner-caption d-xs-block">
+            <h5 style="font-size: 4.4vw;">Second slide label</h5>
+            <p style="font-size: 1.5vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="overlay position-absolute"></div>
+          <div class="sizing-image">
+            <img src="images/banner/banner-1-min-compressed.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-caption position-absolute h-25 top-50 indexing-banner-caption d-xs-block">
+            <h5 style="font-size: 4.4vw;">Third slide label</h5>
+            <p style="font-size: 1.5vw;">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
       </div>
-    
-    
-      <!-- Marketing messaging and featurettes
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
       ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-    
-      <div class="container  marketing my-5">
-    
-        <!-- Three columns of text below the carousel -->
-        <div class="row  d-flex justify-content-center align-items-center justify-content-around ">
-          <h1 class="text-center mb-5">Most visited Place In Lakshmipur</h1>
-          <div class="col-lg-3  shadow py-3">
-            <div class="d-flex justify-content-center align-items-center">
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container  marketing my-5">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row  d-flex justify-content-center align-items-center justify-content-around ">
+        <h1 class="text-center mb-5">Most visited Place In Lakshmipur</h1>
+        <div class="col-lg-3  shadow py-3">
+          <div class="d-flex justify-content-center align-items-center">
             <img class="" src="tinified/img-1.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
           </div>
-    
-            <h2 class="text-center">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p class="text-center">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-                click to see more >>
-              </button>
-            </p>
-            <div class="collapse " id="collapseExample1">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
+
+          <h2 class="text-center">Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1"
+              aria-expanded="false" aria-controls="collapseExample">
+              click to see more >>
+            </button>
+          </p>
+          <div class="collapse " id="collapseExample1">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
             </div>
-          
           </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-3 py-3 shadow ">
-            <div class="d-flex  justify-content-center align-items-center">
-              <img class="" src="tinified/img-2.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
-          </div>
-    
-            <h2 class="text-center">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p class="text-center">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-                click to see more >>
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample2">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-3 py-3 shadow">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="" src="tinified/img-3.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
-          </div>
-    
-            <h2 class="text-center">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p class="text-center">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-                click to see more >>
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample3">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-        <div class="row  mt-5 d-flex justify-content-center align-items-center justify-content-around ">
-          <h1 class="text-center mb-5">Most visited Place In Rangpur</h1>
-          <div class="col-lg-3 py-3 shadow">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="" src="tinified/img-4.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
-          </div>
-    
-            <h2 class="text-center">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p class="text-center">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
-                click to see more >>
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample4">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-3 py-3 shadow">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="" src="tinified/img-1.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
-          </div>
-    
-            <h2 class="text-center">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p class="text-center">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
-                click to see more >>
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample5">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-3 py-3 shadow">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="" src="tinified/img-3.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
-          </div>
-    
-            <h2 class="text-center">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p class="text-center">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
-                click to see more >>
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample6">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-        <div class="row mt-5 d-flex justify-content-center align-items-center justify-content-around ">
-          <h1 class="text-center mb-5">Most visited Place In Chadpur</h1>
-          <div class="col-lg-3 py-3 shadow ">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="" src="tinified/img-5.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
-          </div>
-    
-            <h2 class="text-center">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p class="text-center">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
-                click to see more >>
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample7">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-3 py-3 shadow">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="" src="tinified/img-6.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
-          </div>
-    
-            <h2 class="text-center">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p class="text-center">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample">
-                click to see more >>
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample8">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-3 py-3 shadow">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="" src="tinified/img-2.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
-          </div>
-    
-            <h2 class="text-center">Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p class="text-center">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample">
-                click to see more >>
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample9">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
-            </div>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-    
-    
-        <!-- START THE FEATURETTES -->
-    
-        <hr class="featurette-divider my-5">
-    
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Most Famous Schools in Lakshmipur. <span class="text-muted">It’ll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5">
-            <img  src="images/lakshmipur/img-6.jpg" alt="" style="width: 100%;">
-    
-          </div>
+
         </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Most Famous Schools in Rangpur. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-3 py-3 shadow ">
+          <div class="d-flex  justify-content-center align-items-center">
+            <img class="" src="tinified/img-2.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
           </div>
-          <div class="col-md-5 order-md-1">
-            <img class="bd-placeholder-img" src="images/lakshmipur/img-6.jpg" alt="" style="width: 100%;">
-    
+
+          <h2 class="text-center">Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
+              aria-expanded="false" aria-controls="collapseExample">
+              click to see more >>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
           </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 py-3 shadow">
+          <div class="d-flex justify-content-center align-items-center">
+            <img class="" src="tinified/img-3.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
+          </div>
+
+          <h2 class="text-center">Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3"
+              aria-expanded="false" aria-controls="collapseExample">
+              click to see more >>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <div class="row  mt-5 d-flex justify-content-center align-items-center justify-content-around ">
+        <h1 class="text-center mb-5">Most visited Place In Rangpur</h1>
+        <div class="col-lg-3 py-3 shadow">
+          <div class="d-flex justify-content-center align-items-center">
+            <img class="" src="tinified/img-4.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
+          </div>
+
+          <h2 class="text-center">Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4"
+              aria-expanded="false" aria-controls="collapseExample">
+              click to see more >>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 py-3 shadow">
+          <div class="d-flex justify-content-center align-items-center">
+            <img class="" src="tinified/img-1.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
+          </div>
+
+          <h2 class="text-center">Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5"
+              aria-expanded="false" aria-controls="collapseExample">
+              click to see more >>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample5">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 py-3 shadow">
+          <div class="d-flex justify-content-center align-items-center">
+            <img class="" src="tinified/img-3.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
+          </div>
+
+          <h2 class="text-center">Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6"
+              aria-expanded="false" aria-controls="collapseExample">
+              click to see more >>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample6">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <div class="row mt-5 d-flex justify-content-center align-items-center justify-content-around ">
+        <h1 class="text-center mb-5">Most visited Place In Chadpur</h1>
+        <div class="col-lg-3 py-3 shadow ">
+          <div class="d-flex justify-content-center align-items-center">
+            <img class="" src="tinified/img-5.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
+          </div>
+
+          <h2 class="text-center">Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7"
+              aria-expanded="false" aria-controls="collapseExample">
+              click to see more >>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample7">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 py-3 shadow">
+          <div class="d-flex justify-content-center align-items-center">
+            <img class="" src="tinified/img-6.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
+          </div>
+
+          <h2 class="text-center">Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8"
+              aria-expanded="false" aria-controls="collapseExample">
+              click to see more >>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample8">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3 py-3 shadow">
+          <div class="d-flex justify-content-center align-items-center">
+            <img class="" src="tinified/img-2.jpg" style="height: 140px;width: 140px; border-radius: 50%;" alt="">
+          </div>
+
+          <h2 class="text-center">Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9"
+              aria-expanded="false" aria-controls="collapseExample">
+              click to see more >>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample9">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider my-5">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Most Famous Schools in Lakshmipur. <span class="text-muted">It’ll blow your
+              mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.</p>
         </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-    
-          </div>
+        <div class="col-md-5">
+          <img src="images/lakshmipur/img-6.jpg" alt="" style="width: 100%;">
+
         </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Most Famous Schools in Rangpur. <span class="text-muted">See for
+              yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="bd-placeholder-img" src="images/lakshmipur/img-6.jpg" alt="" style="width: 100%;">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+              dy=".3em">500x500</text>
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2017-2020 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
     
-        <hr class="featurette-divider">
-    
-        <!-- /END THE FEATURETTES -->
-    
-      </div><!-- /.container -->
-    
-    
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2017-2020 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
-    </main>
-    
-    
-        <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    
-          <script>
-            var alertList = document.querySelectorAll('.alert')
-alertList.forEach(function (alert) {
-  new bootstrap.Alert(alert)
-})
-          </script>
-      
-    
-    </body>
-    </html>
+  </main>
+
+
+
+  
+  
+  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <script>
+    var alertList = document.querySelectorAll('.alert')
+    alertList.forEach(function (alert) {
+      new bootstrap.Alert(alert)
+    })
+  </script>
+
+
+</body>
+
+</html>

@@ -14,4 +14,12 @@
 .indexing-banner-caption{
     z-index: 5;
 }
+.forIndex{
+    z-index: 100;
+    /* position: absolute; */
+    
+}
+.carouselzindex{
+    /* z-index: -10; */
+}
 
